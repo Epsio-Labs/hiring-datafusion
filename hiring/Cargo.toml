@@ -1,0 +1,23 @@
+[package]
+name = "hiring"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+datafusion = { path = "../datafusion/core" }
+datafusion-sql = { path = "../datafusion/sql" }
+datafusion-common = { path = "../datafusion/common" }
+datafusion-catalog = { path = "../datafusion/catalog" }
+datafusion-expr = { path = "../datafusion/expr" }
+datafusion-expr-common = { path = "../datafusion/expr-common" }
+datafusion-optimizer = { path = "../datafusion/optimizer", features=["recursive_protection"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+[lints]
+workspace = true
