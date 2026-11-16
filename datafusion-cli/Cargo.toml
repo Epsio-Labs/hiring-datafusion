@@ -70,7 +70,7 @@ url = { workspace = true }
 assert_cmd = "2.0"
 ctor = { workspace = true }
 insta = { workspace = true }
-insta-cmd = "0.6.0"
+insta-cmd = "0.7.0"
 predicates = "3.0"
 rstest = { workspace = true }
 testcontainers = { workspace = true }
